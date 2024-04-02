@@ -1,0 +1,59 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/auth/register.css">
+   <title>Register</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="background">
+      <div class="content">
+         <div class="title">Cadastro</div>
+         <div class="content-login">
+            Já possui uma conta?&nbsp;<a class="login" href="login.html">Entrar</a>
+         </div>
+         <div class="content-form">
+            <form class="form" id="form">
+               <div class="content-input">
+                  <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
+                  <i class="icon fa-solid fa-user"></i>                  
+               </div>
+               <div class="content-input">
+                  <input class="input" type="email" name="email" id="email" placeholder="E-mail">
+                  <i class="icon fa-solid fa-user"></i>                  
+               </div>
+               <div class="content-input">
+                  <input class="input" type="text" name="phone" id="phone" placeholder="Telefone">
+                  <i class="icon fa-sharp fa-solid fa-phone-volume"></i>                  
+               </div>
+               <div class="content-input">
+                  <input class="input" type="password" id="senha" placeholder="Senha">
+                  <i class="icon fa-solid fa-lock"></i>
+                  <i class="icon-eye fa-sharp fa-solid fa-eye-slash" id="eye-senha" onclick="revelar_senha(true, 1)"></i>      
+               </div>
+               <div class="content-input">
+                  <input class="input" type="password" id="confirmar" placeholder="Confirmar senha">
+                  <i class="icon fa-solid fa-lock"></i>
+                  <i class="icon-eye fa-sharp fa-solid fa-eye-slash" id="eye-confirmar" onclick="revelar_senha(true, 2)"></i>      
+               </div>
+               <div class="content-bttn">
+                  <button class="bttn-form" type="button" id="bttn" onclick="validar_cadastro()">Confirmar</button>
+               </div>
+               <input type="hidden" name="senha_hash" id="senha_hash">
+            </form>
+         </div>
+         <div class="alert-form">
+            <span class="" id="alert"></span>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/auth/register.js"></script>
+<script src="../../javascript/sec/encrypted.js"></script>
+<script src="../../javascript/sec/crypto-js.min.js"></script>
+<script src="../../javascript/sec/js-encrypt.min.js"></script>
+

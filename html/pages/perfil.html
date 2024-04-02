@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/pages/perfil.css">
+   <link rel="stylesheet" href="../../css/pages/all.css">
+   <title>Perfil</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="header">
+      <div class="content-logo">
+            <span class="logo" onclick="inicio()"><img src="../../imagens/logo.png" width="110%" height="100%"></span>
+            <span class="title" onclick="inicio()">Vakinha<br>Solidária</span>
+      </div>
+      <div class="content-menu" id="menu">
+         <a class="menu" href="help.html">CAMPANHAS</a>
+         <a class="menu" href="create_help.html">CRIAR CAMPANHA</a>
+      </div>
+      <div class="content-user"> 
+         <div class="menu-user"><i onclick="perfil()" class="fa-solid fa-house-user"></i></div>
+         <div class="menu-user"><i onclick="logout()" class="fa-solid fa-right-from-bracket"></i></div>
+         <div class="line"></div>
+         <div class="menu-mobile"><i onclick="menu_lateral(true)" class="fa-solid fa-bars green" id="menu-mobile"></i></div>
+      </div>
+   </div>
+   <div class="main">
+      <div class="content-help" id="help"></div>
+   </div>
+   <div class="footer">&copy; 2023 Vakinha Solidária. Todos os direitos reservados.</div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/sec/block.js"></script>
+<script src="../../javascript/pages/all.js"></script>
+<script src="../../javascript/pages/perfil.js"></script>
+

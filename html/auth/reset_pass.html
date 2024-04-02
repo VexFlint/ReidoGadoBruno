@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/auth/reset_pass.css">
+   <title>Reset Password</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="background">
+      <div class="content tela1" id="content">
+         <div class="title">Redefinir Senha</div>
+         <div class="img img-tela1" id="img">
+            <i class="icon-img fa-solid fa-lock" id="icon"></i>
+         </div>
+         <div class="message" id="message">Informe seu e-mail e lhe enviaremos<br>um código de acesso</div>
+         <div class="content-form content-form-tela1" id="content-form">
+            <form class="form" id="form">
+               <div class="content-input" id="content-input">
+                  <input class="input" type="email" id="e-mail" placeholder="E-mail">
+                  <i class="icon fa-solid fa-user"></i>                  
+               </div>
+               <div class="content-bttn" id="content-bttn">
+                  <button class="bttn" type="button" id="bttn" onclick="enviar_codigo()">Enviar</button>
+               </div>
+               <input type="hidden" name="email" id="email">
+               <input type="hidden" name="token_hash" id="token_hash">
+               <input type="hidden" name="senha_hash" id="senha_hash">         
+            </form>
+         </div>
+         <div class="alert-form" id="alert-form">
+            <span class="alert red" id="alert"></span>
+         </div>  
+      </div>
+   </div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/auth/reset_pass.js"></script>
+<script src="../../javascript/sec/encrypted.js"></script>
+<script src="../../javascript/sec/crypto-js.min.js"></script>
+<script src="../../javascript/sec/js-encrypt.min.js"></script>
+

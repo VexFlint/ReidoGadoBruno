@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/pages/contact.css">
+   <link rel="stylesheet" href="../../css/pages/all.css">
+   <title>Contact</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="header">
+      <div class="content-logo">
+            <span class="logo" onclick="inicio()"><img src="../../imagens/logo.png" width="110%" height="100%"></span>
+            <span class="title" onclick="inicio()">Vakinha<br>Solidária</span>
+      </div>
+      <div class="content-menu" id="menu">
+         <a class="menu" href="help.html">CAMPANHAS</a>
+         <a class="menu" href="create_help.html">CRIAR CAMPANHA</a>
+      </div>
+      <div class="content-user"> 
+         <div class="menu-user"><i onclick="perfil()" class="fa-solid fa-house-user"></i></div>
+         <div class="menu-user"><i onclick="logout()" class="fa-solid fa-right-from-bracket"></i></div>
+         <div class="line"></div>
+         <div class="menu-mobile"><i onclick="menu_lateral(true)" class="fa-solid fa-bars green" id="menu-mobile"></i></div>
+      </div>
+   </div>
+   <div class="main">
+      <div class="content-help">
+         <div class="title-form">Formulário de Contato</div>
+         <div class="content-form">
+
+            <form class="form" id="form">
+               <div class="content-input">
+                  <input class="input" type="text" name="nome" id="nome" placeholder="Nome">
+                  <i class="icon fa-solid fa-user"></i>               
+               </div>      
+               <div class="content-input">
+                  <input class="input" type="text" name="assunto" id="assunto" placeholder="Assunto da mensagem">
+                  <i class="icon fa-solid fa-paper-plane"></i>                 
+               </div>
+               <div class="content-area">
+                  <textarea class="area" name="mensagem" id="mensagem" placeholder="Mensagem a ser enviada"></textarea>
+               </div>
+               <div class="content-bttn">
+                  <button class="bttn-form" type="button" id="bttn" onclick="validar_mensagem()">Enviar mensagem</button>
+               </div>
+
+            </form>
+         </div>
+         <div class="alert-form">
+            <span class="alert red" id="alert"></span>
+         </div>
+      </div>
+   </div>
+   <div class="footer">&copy; 2023 Vakinha Solidária. Todos os direitos reservados.</div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/sec/block.js"></script>
+<script src="../../javascript/pages/all.js"></script>
+<script src="../../javascript/pages/contact.js"></script>
+<script src="../../javascript/sec/encrypted.js"></script>
+<script src="../../javascript/sec/crypto-js.min.js"></script>
+<script src="../../javascript/sec/js-encrypt.min.js"></script>
+
+
+

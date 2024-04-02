@@ -1,0 +1,49 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/auth/login.css">
+   <title>Login</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="background">
+      <div class="content">
+         <div class="title">Login</div>
+         <div class="content-register">
+            Ainda não possui uma conta?&nbsp;<a class="register" href="register.html">Cadastre-se</a>
+         </div>
+         <div class="content-form">
+            <form class="form" id="form">
+               <div class="content-input">
+                  <input class="input" type="email" name="email" id="email" placeholder="E-mail">
+                  <i class="icon fa-solid fa-user"></i>                  
+               </div>
+               <div class="content-input">
+                  <input class="input" type="password" id="senha" placeholder="Senha">
+                  <i class="icon fa-solid fa-lock"></i>
+                  <i class="icon-eye fa-sharp fa-solid fa-eye-slash" id="eye" onclick="revelar_senha(true)"></i>      
+               </div>
+               <div class="content-forgot">
+                  <a class="forgot" href="reset_pass.html">Esqueceu a senha?</a>
+               </div>
+               <div class="content-bttn">
+                  <button class="bttn-form" type="button" id="bttn" onclick="validar_login()">Entrar</button>
+               </div>
+               <input type="hidden" name="senha_hash" id="senha_hash">
+            </form>
+         </div>
+         <div class="alert-form">
+            <span class="" id="alert"></span>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/auth/login.js"></script>
+<script src="../../javascript/sec/encrypted.js"></script>
+<script src="../../javascript/sec/crypto-js.min.js"></script>
+<script src="../../javascript/sec/js-encrypt.min.js"></script>
+

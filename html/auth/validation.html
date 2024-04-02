@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/auth/validation.css">
+   <title>Validation</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="background">
+      <div class="content">
+         <div class="message">Sucesso! Seu cadastro foi validado.</div>
+         <div class="img">
+            <i class="icon fa-solid fa-user-check"></i>
+         </div>
+         <div class="content-bttn">
+            <button class="bttn" type="button" onclick="autenticar_usuario()">Fazer login</button>
+         </div> 
+      </div>
+   </div>
+   <form id="form">   
+      <input type="hidden" name="key" id="key"/>
+   </form>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/auth/validation.js"></script>
+<script src="../../javascript/sec/encrypted.js"></script>
+<script src="../../javascript/sec/crypto-js.min.js"></script>
+<script src="../../javascript/sec/js-encrypt.min.js"></script>
+

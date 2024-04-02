@@ -1,0 +1,215 @@
+body{
+   margin: 0px;
+   font-family: Montserrat-Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
+.background{
+   width: 100%;
+   height: 100%;
+   background-color: #a6b5f7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.content{
+   width: 450px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5px;
+   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.445);
+}
+
+.tela1{
+   height: 500px;
+}
+
+.tela2{
+   height: 570px;
+}
+
+.tela3{
+   height: 400;
+}
+
+@media screen and (max-width: 450px){
+   .tela1{
+      height: auto;
+   }
+   .tela2{
+      height: auto;
+   }
+   .tela3{
+      height: auto;
+   }
+}
+
+.title{
+   width: 100%;
+   height: 100px;
+   font-size: 25px;
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #63ca66;
+   border-radius: 5px 5px 0px 0px;
+}
+
+.img{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.img-tela1{
+   height: 20%;
+}
+
+.img-tela2{
+   height: 12%;
+   align-items: end;
+}
+
+.img-tela3{
+   height: 22%;
+   align-items: end;
+}
+
+.icon-img{
+   font-size: 60px;
+   color: #222;
+}
+
+.message{
+   width: 100%;
+   height: 80px;
+   font-size: 14px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   line-height: 1.7;  
+}
+
+.content-form{
+   width: 100%;
+}
+
+.content-form-tela1{
+   height: calc(100% - (100px + 80px + 20% + 15%))
+}
+
+.content-form-tela2{
+   height: calc(100% - (100px + 80px + 12% + 15%))
+}
+
+.content-form-tela3{
+   height: calc(100% - (100px + 80px + 22%))
+}
+
+.form{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-input{
+   position: relative;
+   width: 75%;
+   margin-bottom: 10px;
+}
+
+.input{
+   width: 100%;
+   height: 60px;
+   padding-left: 45px;
+   font-size: 14px;
+   color: #555;
+   font-family: Montserrat-Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   border: 1px solid #e6e6e6;
+   border-radius: 10px;
+   transition: 0.4s;
+   outline: 0;
+}
+
+.input:focus{
+   border: 1px solid #44a047;
+}
+
+.icon{
+   margin-top: 22px;
+   margin-left: 15px;
+   position: absolute;
+   left: 0;
+   font-size: 17px;
+   color: #444;
+}
+
+.icon-eye{
+   margin-left: 90%;
+   margin-top: 22px;
+   position: absolute;
+   left: 0;
+   font-size: 17px;
+   color: #666;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.icon-eye:hover{
+   color: #444;
+}
+
+.content-bttn{
+   width: 100%;
+   height: 50px;
+   font-size: 14px;
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.bttn{
+   width: 50%;
+   height: 40px;
+   font-size: 16px;
+   font-family: Montserrat-Bold, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   background: #47a847;
+   color: rgb(247, 244, 244);
+   border: 0px;
+   border-radius: 15px;
+   transition: 0.3s;
+   cursor: pointer;
+   font-weight: 600;
+   line-height: 1.2;
+   letter-spacing: 1px;
+}
+
+.bttn:hover{
+   background: #333;
+}
+
+.wait{
+   cursor: wait;
+}
+
+.alert-form{
+   width: 100%;
+   height: 15%;
+   display: flex;
+   justify-content: center;
+}
+
+.alert{
+   font-size: 14px;
+   font-family: Montserrat-Bold, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   text-align: center;
+}
+
+.red{
+   color: #c80000;
+}

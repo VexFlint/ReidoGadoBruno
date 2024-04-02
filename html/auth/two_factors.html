@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/auth/two_factors.css">
+   <title>Two Factors</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="background">
+      <div class="content" id="content">
+         <div class="title">Verificação em Duas Etapas</div>
+         <div class="img img-tela" id="img">
+            <i class="icon-img fa-solid fa-user-shield" id="icon"></i>
+         </div>
+         <div class="message message-tela" id="message">Enviamos um código de verificação para seu telefone.<br>
+         Não recebeu? Clique&nbsp;<a class="code-sms" href="two_factors.html">aqui</a>&nbsp;para enviar outro</div>
+         <div class="content-form content-form" id="content-form">
+            <form class="form" id="form">
+               <div class="content-input" id="content-input">
+                  <input class="input" type="text" id="sms-code" placeholder="Código SMS">
+                  <i class="icon fa-solid fa-key"></i>                  
+               </div>
+               <div class="content-bttn" id="content-bttn">
+                  <button class="bttn" type="button" id="bttn" onclick="verificar_codigo()">Confirmar</button>
+               </div>
+               <input type="hidden" name="code_hash" id="code_hash">
+            </form>
+         </div>
+         <div class="alert-form" id="alert-form">
+            <span class="alert red" id="alert"></span>
+         </div>  
+      </div>
+   </div>
+   </form>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/auth/two_factors.js"></script>
+<script src="../../javascript/sec/encrypted.js"></script>
+<script src="../../javascript/sec/crypto-js.min.js"></script>
+<script src="../../javascript/sec/js-encrypt.min.js"></script>
+

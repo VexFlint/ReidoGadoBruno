@@ -1,0 +1,161 @@
+html, body{
+   height: 100%;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+}
+
+.main{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-help{
+   width: 540px;
+   height: 520px;
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.445);
+   margin-top: 70px;
+}
+
+@media screen and (max-width: 540px){
+   .content-help{
+      height: auto;
+   }
+}
+
+.title-form{
+   width: 100%;
+   height: 100px;
+   font-size: 24px;
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #63ca66;
+   border-radius: 5px 5px 0px 0px;
+   font-family: Montserrat-Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   font-weight: 500;
+}
+
+.content-form{
+   width: 100%;
+   height: calc(100% - 170px);
+}
+
+.form{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-input{
+   width: 75%;
+   margin-bottom: 10px;
+}
+
+.input{
+   width: 100%;
+   height: 55px;
+   padding-left: 55px;
+   font-size: 14px;
+   color: #555;
+   font-family: Montserrat-Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   border: 1px solid #e6e6e6;
+   border-radius: 10px;
+   transition: 0.4s;
+   outline: 0;
+}
+
+.input:focus{
+   border: 1px solid #44a047;
+}
+
+.icon{
+   margin-top: -35px;
+   margin-left: 20px;
+   left: 0;
+   font-size: 17px;
+   color: #444;
+}
+
+.content-area{
+   width: 75%;
+   margin-bottom: 10px;
+}
+
+.area{
+   width: 100%;
+   height: 110px;
+   padding: 15px 25px;
+   font-size: 14px;
+   color: #555;
+   font-family: Montserrat-Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   border: 1px solid #e6e6e6;
+   border-radius: 10px;
+   transition: 0.4s;
+   outline: 0;
+   resize: none;
+}
+
+.content-bttn{
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.bttn-form{
+   width: 80%;
+   height: 40px;
+   font-size: 16px;
+   font-family: Montserrat-Bold, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   background: #47a847;
+   color: rgb(247, 244, 244);
+   border: 0px;
+   border-radius: 15px;
+   transition: 0.3s;
+   cursor: pointer;
+   font-weight: 600;
+   line-height: 1.2;
+   letter-spacing: 1px;
+   margin-top: 10px;
+}
+
+.bttn-form:hover{
+   background: #333;
+}
+
+.alert-form{
+   width: 100%;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+}
+
+.alert{
+   font-size: 14px;
+   font-family: Montserrat-Bold, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+   text-align: center;
+}
+
+.green{
+   color: rgb(56, 161, 77);
+}
+
+.red{
+   color: #c80000;
+}
+
+.footer{
+   flex-shrink: 0;
+   margin-top: 70px;
+}

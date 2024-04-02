@@ -1,0 +1,52 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../css/pages/admin.css">
+   <link rel="stylesheet" href="../../css/pages/all.css">
+   <title>Administrator</title>
+   <link rel="icon" href="../../imagens/logo.png">
+</head>
+<body>
+   <div class="header">
+      <div class="content-logo">
+            <span class="logo"><img src="../../imagens/logo.png" width="110%" height="100%"></span>
+            <span class="title"">Vakinha<br>Solidária</span>
+      </div>
+      <div class="content-menu" id="menu">
+         <span class="menu-admin">Bem Vindo! Administrador</span>
+      </div>
+      <div class="content-user"> 
+         <div class="menu-user"><i onclick="logout()" class="fa-solid fa-right-from-bracket"></i></div>
+      </div>
+   </div>
+   <div class="main">
+      <div class="content-aprovacao">
+         <div class="line-aprovacao">
+            <div class="title-aprovacao">Campanhas Pendentes</div>
+            <div id="aprovar">
+
+            </div>
+         </div>
+         <div class="line-aprovacao">
+            <div class="title-aprovacao">Campanhas Aprovadas</div>
+            <div id="aprovado">
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <form id="form-hidden">
+      <input type="hidden" name="campanha" id="id-campanha"/>
+   </form>
+   <div class="footer">&copy; 2023 Vakinha Solidária. Todos os direitos reservados.</div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/b1a1917444.js" crossorigin="anonymous"></script>
+<script src="../../javascript/sec/block_admin.js"></script>
+<script src="../../javascript/sec/block.js"></script>
+<script src="../../javascript/pages/all.js"></script>
+<script src="../../javascript/pages/admin.js"></script>
+
+
